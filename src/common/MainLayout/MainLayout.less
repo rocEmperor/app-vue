@@ -1,0 +1,60 @@
+.main-header {
+  height: 64px;
+  background-color: #fff;
+  line-height: 64px;
+  border-bottom: 1px solid #e7e7e7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  box-sizing: border-box;
+  z-index: 10;
+  width: 100%;
+  padding: 0 50px;
+  .title {
+    float: left;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .opearte {
+    float: right;
+    >span {
+      margin-right: 10px;
+      cursor: pointer;
+      color: #1890ff;
+      &:hover {
+        opacity: 0.8;
+      }
+    } 
+  }
+  .el-dialog__body {
+    padding: 0 20px;
+  }
+  .el-dialog__header {
+    padding-bottom: 0;
+  }
+  .el-dialog__footer, .el-dialog__header {
+    line-height: 40px;
+  }
+}
+
+.main-nav {
+  width: 200px;
+  position: fixed;
+  top: 64px;
+  min-height: calc(100vh - 64px);
+  background-color: #001529;
+  z-index: 6;
+  .el-menu {
+    border-right: 0;
+    .el-submenu__title, .el-menu-item {
+      font-size: 12px;
+    }
+    .el-menu-item {
+      padding-left: 60px !important;
+      &:hover {
+        color: rgb(255, 208, 75) !important;
+      }
+    }
+  }
+}
