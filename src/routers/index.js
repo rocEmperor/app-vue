@@ -1,4 +1,4 @@
-const App = () => import(/*webpackChunkName: "App"*/ '../App');
+import App from '../App';
 const Login = () => import(/*webpackChunkName: "Login"*/ '../components/Login/Login');
 const Forget = () => import(/*webpackChunkName: "Forget"*/ '../components/Forget/Forget');
 
